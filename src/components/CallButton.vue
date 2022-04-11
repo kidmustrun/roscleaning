@@ -4,7 +4,8 @@
       <a href="#">Заказать звонок</a>
     </div>
     <div class="call-image">
-      <img id="imageCall" src="../assets/Vector.svg" />
+        <a href="#"> <img id="imageCall" src="../assets/Vector.svg" /></a>
+     
     </div>
   </div>
 </template>

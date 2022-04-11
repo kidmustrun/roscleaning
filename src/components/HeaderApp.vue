@@ -9,11 +9,11 @@
       
 
         <ul class="navbar-nav d-flex ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#weare">О нас</a>
+        <li class="nav-item" >
+          <a href="#weare" class="nav-link">О нас</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Отзывы</a>
+          <a class="nav-link" href="#reviews">Отзывы</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Контакты</a>

@@ -4,6 +4,8 @@
   <HeroMain/>
   <CallButton/>
   <AboutUs/>
+  <TypesOfWork/>
+  <ReviewsClients/>
   </div>
 </template>
 
@@ -12,6 +14,8 @@ import HeaderApp from '../components/HeaderApp.vue'
 import HeroMain from '../components/HeroMain.vue'
 import CallButton from '../components/CallButton.vue'
 import AboutUs from '../components/AboutUs.vue'
+import TypesOfWork from '../components/TypesOfWork.vue'
+import ReviewsClients from '../components/ReviewsClients.vue'
 
 export default {
   name: 'MainPage',
@@ -19,7 +23,9 @@ export default {
     HeaderApp,
     HeroMain,
     CallButton,
-    AboutUs
+    AboutUs,
+    TypesOfWork,
+    ReviewsClients
   }
 }
 </script>
