@@ -13,7 +13,7 @@ export default {
 .hero{
     background: url("~@/assets/hero.png") no-repeat center 20%;
     background-size: cover;
-    height: calc(100vh - 56px);
+    height: 100vh;
     color: white;
     min-height: 340px;
 }

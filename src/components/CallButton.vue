@@ -1,21 +1,22 @@
 <template>
   <div class="call-button">
-    <div class="call-text">
+    <div id="textCall" class="call-text">
       <a href="#">Заказать звонок</a>
     </div>
     <div class="call-image">
-      <img src="../assets/Vector.svg" />
+      <img id="imageCall" src="../assets/Vector.svg" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "CallButton",
+  name: "CallButton"
 };
 </script>
 <style scoped>
 .call-button {
+    z-index: 100;
   position: fixed;
   bottom: 5vh;
   right: 5vw;
@@ -47,8 +48,10 @@ export default {
   .call-text {
     display: none;
   }
+  
   .call-image {
     position: static;
   }
+
 }
 </style>

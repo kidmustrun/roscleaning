@@ -3,6 +3,7 @@
   <HeaderApp/>
   <HeroMain/>
   <CallButton/>
+  <AboutUs/>
   </div>
 </template>
 
@@ -10,12 +11,15 @@
 import HeaderApp from '../components/HeaderApp.vue'
 import HeroMain from '../components/HeroMain.vue'
 import CallButton from '../components/CallButton.vue'
+import AboutUs from '../components/AboutUs.vue'
+
 export default {
   name: 'MainPage',
   components: {
     HeaderApp,
     HeroMain,
-    CallButton
+    CallButton,
+    AboutUs
   }
 }
 </script>
