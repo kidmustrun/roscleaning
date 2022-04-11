@@ -1,13 +1,21 @@
 <template>
-<MainPage/>
+<div>
+  <HeaderApp/>
+  <HeroMain/>
+  <CallButton/>
+  </div>
 </template>
 
 <script>
-import MainPage from './pages/MainPage.vue'
+import HeaderApp from '../components/HeaderApp.vue'
+import HeroMain from '../components/HeroMain.vue'
+import CallButton from '../components/CallButton.vue'
 export default {
-  name: 'App',
+  name: 'MainPage',
   components: {
-    MainPage
+    HeaderApp,
+    HeroMain,
+    CallButton
   }
 }
 </script>
