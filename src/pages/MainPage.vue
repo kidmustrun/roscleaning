@@ -6,6 +6,9 @@
   <AboutUs/>
   <TypesOfWork/>
   <ReviewsClients/>
+  <OurClients/>
+  <ContactUs/>
+  <FooterApp/>
   </div>
 </template>
 
@@ -16,6 +19,9 @@ import CallButton from '../components/CallButton.vue'
 import AboutUs from '../components/AboutUs.vue'
 import TypesOfWork from '../components/TypesOfWork.vue'
 import ReviewsClients from '../components/ReviewsClients.vue'
+import OurClients from '../components/OurClients.vue'
+import ContactUs from '../components/ContactUs.vue'
+import FooterApp from '../components/FooterApp.vue'
 
 export default {
   name: 'MainPage',
@@ -25,7 +31,10 @@ export default {
     CallButton,
     AboutUs,
     TypesOfWork,
-    ReviewsClients
+    ReviewsClients,
+    OurClients,
+    ContactUs, 
+    FooterApp
   }
 }
 </script>

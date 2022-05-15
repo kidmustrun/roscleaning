@@ -1,6 +1,6 @@
 <template>
   <div id="reviews" class="mt-5">
-    <h1 id="weare" class="text-center">Отзывы</h1>
+    <h2 class="text-center">Отзывы</h2>
     <div class="blocks">
          <img class="stars-left" src="../assets/stars.svg" />
       <div class="right-block mt-5">

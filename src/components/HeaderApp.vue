@@ -16,7 +16,7 @@
           <a class="nav-link" href="#reviews">Отзывы</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Контакты</a>
+          <a class="nav-link" href="#contacts">Контакты</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="tel:+78005553535"><u>88005553535</u></a>

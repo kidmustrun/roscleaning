@@ -1,6 +1,6 @@
 <template>
   <div class="mt-5">
-    <h1 id="weare" class="text-center">О компании</h1>
+    <h2 id="weare" class="text-center">О компании</h2>
     <div class="blocks mt-4">
         <img class="bubbles-left" src="../assets/bubbles_left.svg" />
          <img class="bubbles-right" src="../assets/bubbles.svg" />
@@ -41,7 +41,7 @@ export default {
   border-radius: 0px 30px 30px 0px;
   width: 45vw;
   padding: 20px 0px 20px 100px;
-  font-size:max(0.5em, min(1.5em, calc(100vw * 4 / 75)));
+  font-size:max(0.5em, min(1.3em, calc(100vw * 4 / 75)));
   line-height: 24px;
   border-left-style: none;
   transition: 0.5s ease;
@@ -54,7 +54,7 @@ export default {
   border-radius: 30px 0px 0px 30px;
   width: 45vw;
   padding: 20px 100px 20px 0px;
-  font-size:max(0.5em, min(1.5em, calc(100vw * 4 / 75)));
+  font-size:max(0.5em, min(1.3em, calc(100vw * 4 / 75)));
   line-height: 24px;
   margin-left: auto;
   border-right-style: none;
@@ -90,27 +90,46 @@ export default {
     z-index: -1;
     height: inherit;
 }
+.left-block img{
+  width: 40%;
+}
+.right-block img{
+  width: 40%;
+}
 @media screen and (max-width: 1200px) {
     .left-block{
-        width: 90vw;
+        width: 70vw;
         padding: 20px;
          margin-top: 5vh;
     }
      .right-block{
-        width: 90vw;
+        width: 70vw;
         padding: 20px;
          margin-top: 5vh;
     }
     .left-block img{
-        max-width: 70vw;
+        width: 70%;
+        max-width: 30vw;
     }
      .right-block img{
-        max-width: 70vw;
+        width: 70%;
+        max-width: 30vw;
     }
 }
 @media screen and (max-width: 768px) {
     .bubbles-left{
    display: none;
 }
+
+}
+@media screen and (max-width: 576px) {
+ .left-block img{
+        width: 90%;
+        max-width: 80vw;
+    }
+     .right-block img{
+        width: 90%;
+        max-width: 80vw;
+    }
 }
 </style>

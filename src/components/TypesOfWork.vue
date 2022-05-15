@@ -1,6 +1,6 @@
 <template>
 <div class="mt-5">
-    <h1 class="text-center">Виды работ</h1>
+    <h2 class="text-center">Виды работ</h2>
     <div class="row mt-4">
         <div class="col col-left">
             <div class="text-left text-top">
@@ -61,7 +61,7 @@ img{
     background-color: #000;
     color: #fff;
     padding: 10px 70px 10px 30px;
-    font-size:max(1.0em, min(1.0em, calc(100vw * 4 / 75)));
+    font-size:max(1.0em, min(1.3em, calc(100vw * 4 / 75)));
 }
 .text-right{
     position:absolute;
@@ -69,7 +69,7 @@ img{
     color: #fff;
     right: 0;
     padding: 10px 30px 10px 70px;
-    font-size:max(1.0em, min(1.0em, calc(100vw * 4 / 75)));
+    font-size:max(1.0em, min(1.3em, calc(100vw * 4 / 75)));
 }
 .text-top{
  top: 50px;

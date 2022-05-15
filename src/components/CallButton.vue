@@ -1,10 +1,10 @@
 <template>
   <div class="call-button">
     <div id="textCall" class="call-text">
-      <a href="#">Заказать звонок</a>
+      <a href="#contacts">Заказать звонок</a>
     </div>
     <div class="call-image">
-        <a href="#"> <img id="imageCall" src="../assets/Vector.svg" /></a>
+        <a href="#contacts"> <img id="imageCall" src="../assets/Vector.svg" /></a>
      
     </div>
   </div>
