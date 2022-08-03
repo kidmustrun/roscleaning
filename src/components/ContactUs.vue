@@ -1,20 +1,20 @@
 <template>
-  <div id="contacts" class="mt-5">
-    <h2 class="text-center">Контакты</h2>
+  <div id="contacts" class="pt-5">
+    <h2 class="text-center"><b>Контакты</b></h2>
     <img class="bubbles-right" src="../assets/bubbles.svg" />
     <div class="row w-100 mt-4">
       <div class="col-lg-5 contacts my-lg-auto">
-        <p>Телефон: 88005553535</p>
-        <p>Email: test@mail.ru</p>
+        <p>Телефон: <a class="link" href="tel:+79211891727" target="_blank" ><u>8 (921) 189 17-27</u></a></p>
+        <p>Email: <a class="link" href="mailto:contact@ros-cleaning.ru" target="_blank" ><u>contact@ros-cleaning.ru</u></a></p>
         <p>Социальные сети:</p>
         <div class="d-flex">
-          <a href="#" class="me-3">
+          <a href="https://t.me/Roscleaning" class="me-3" target="_blank" >
             <img src="../assets/telegram.svg" />
           </a>
-          <a href="#" class="me-3">
+          <a href="https://wa.me/+79211891727" target="_blank"  class="me-3">
             <img src="../assets/whatsapp.svg" />
           </a>
-          <a href="#">
+          <a href="https://vk.com/roscleaning" target="_blank" >
             <img src="../assets/vk.svg" />
           </a>
         </div>
@@ -155,6 +155,9 @@ input {
 textarea {
   border: 1px solid #849fff;
   border-radius: 5px;
+}
+.link{
+  color: #000;
 }
 @media screen and (max-width: 576px) {
   .form {

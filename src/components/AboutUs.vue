@@ -1,24 +1,25 @@
 <template>
-  <div class="mt-5">
-    <h2 id="weare" class="text-center">О компании</h2>
+  <div class="pt-5" id="weare">
+    <h2  class="text-center"><b>О компании</b></h2>
     <div class="blocks mt-4">
         <img class="bubbles-left" src="../assets/bubbles_left.svg" />
          <img class="bubbles-right" src="../assets/bubbles.svg" />
         
          
       <div class="left-block mt-5">
-        <p>проводим клининговые работы</p>
-        <p>работаем в СПБ и ЛО</p>
+        <p>Проводим клининговые работы
+        в СПБ и ЛО</p>
         <img src="../assets/spb.svg" />
       </div>
       <div class="right-block">
-        <p>занимаемся всеми видами услуг</p>
-        <p>от уборки до удаления пятен</p>
+        <p>Предоставляем полный спектр
+        <br>клининговых услуг</p>
         <img src="../assets/clean.svg" />
       </div>
       <div class="left-block">
-        <p>имеем опыт работы более 5 лет</p>
-        <p>сохраняем доступную стоимость</p>
+        <p>Имеем двухлетний опыт работы
+        <br>Сотрудничаем с малым и средним бизнесом
+        <br>Наши клиенты нам доверяют</p>
         <img src="../assets/quality.svg" />
       </div>
     </div>
@@ -36,12 +37,12 @@ export default {
 }
 .left-block {
   background: #ffffff;
-  border: 1px solid #000000;
+border: 3px solid #849fff;
   box-sizing: border-box;
   border-radius: 0px 30px 30px 0px;
   width: 45vw;
   padding: 20px 0px 20px 100px;
-  font-size:max(0.5em, min(1.3em, calc(100vw * 4 / 75)));
+  font-size:max(0.5em, min(1.2em, calc(100vw * 4 / 75)));
   line-height: 24px;
   border-left-style: none;
   transition: 0.5s ease;
@@ -49,31 +50,15 @@ export default {
 .right-block {
   text-align: right;
   background: #ffffff;
-  border: 1px solid #000000;
+border: 3px solid #849fff;
   box-sizing: border-box;
   border-radius: 30px 0px 0px 30px;
   width: 45vw;
   padding: 20px 100px 20px 0px;
-  font-size:max(0.5em, min(1.3em, calc(100vw * 4 / 75)));
+  font-size:max(0.5em, min(1.2em, calc(100vw * 4 / 75)));
   line-height: 24px;
   margin-left: auto;
   border-right-style: none;
-  transition: 0.5s ease;
-}
-.left-block:hover {
-  background: #ddedff;
-  border: 1px solid #849fff;
-  border-left-style: none;
-  cursor: pointer;
-  box-sizing: border-box;
-  transition: 0.5s ease;
-}
-.right-block:hover {
-  background: #ddedff;
-  border: 1px solid #849fff;
-  border-right-style: none;
-  cursor: pointer;
-  box-sizing: border-box;
   transition: 0.5s ease;
 }
 .bubbles-right{

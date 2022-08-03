@@ -26,7 +26,7 @@ export default {
 }
 .call-text {
   background: #ffffff;
-  border: 5px solid #000000;
+  border: 5px solid #0d6efd;
   box-sizing: border-box;
   border-radius: 100px;
   padding: 10px 45px 10px 30px;
@@ -36,7 +36,7 @@ export default {
   text-decoration: none;
 }
 .call-image {
-  background: #000000;
+  background: #0d6efd;
   border: 5px solid #ffffff;
   box-sizing: border-box;
   border-radius: 100%;

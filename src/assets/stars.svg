@@ -1,7 +1,18 @@
 <svg width="393" height="38" viewBox="0 0 393 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M126.239 14.9735H112.444L108.274 2L104.103 14.9735H90.3082L101.537 22.7575L97.2057 35.731L108.274 27.6226L119.342 35.731L115.011 22.7575L126.239 14.9735Z" stroke="black" stroke-width="3" stroke-linejoin="round"/>
-<path d="M37.9309 14.9735H24.136L19.9654 2L15.7949 14.9735H2L13.2284 22.7575L8.89744 35.731L19.9654 27.6226L31.0334 35.731L26.7025 22.7575L37.9309 14.9735Z" stroke="black" stroke-width="3" stroke-linejoin="round"/>
-<path d="M214.547 14.9735H200.752L196.582 2L192.411 14.9735H178.616L189.845 22.7575L185.514 35.731L196.582 27.6226L207.65 35.731L203.319 22.7575L214.547 14.9735Z" stroke="black" stroke-width="3" stroke-linejoin="round"/>
-<path d="M302.855 14.9735H289.061L284.89 2L280.72 14.9735H266.925L278.153 22.7575L273.822 35.731L284.89 27.6226L295.958 35.731L291.627 22.7575L302.855 14.9735Z" stroke="black" stroke-width="3" stroke-linejoin="round"/>
-<path d="M391.164 14.9735H377.369L373.198 2L369.028 14.9735H355.233L366.461 22.7575L362.13 35.731L373.198 27.6226L384.266 35.731L379.935 22.7575L391.164 14.9735Z" stroke="black" stroke-width="3" stroke-linejoin="round"/>
+<style>
+@keyframes change_fill {
+    0% { fill: yellow; }
+    50% { fill: #ffcc0044; }
+    100% { fill: yellow; }
+}
+path {
+  animation: change_fill 5s infinite linear;
+}
+
+</style>
+<path class="first" d="M126.239 14.9735H112.444L108.274 2L104.103 14.9735H90.3082L101.537 22.7575L97.2057 35.731L108.274 27.6226L119.342 35.731L115.011 22.7575L126.239 14.9735Z" stroke="black" stroke-width="3" fill="yellow" stroke-linejoin="round"/>
+<path class="second" d="M37.9309 14.9735H24.136L19.9654 2L15.7949 14.9735H2L13.2284 22.7575L8.89744 35.731L19.9654 27.6226L31.0334 35.731L26.7025 22.7575L37.9309 14.9735Z" stroke="black" stroke-width="3" fill="yellow" stroke-linejoin="round"/>
+<path class="third" d="M214.547 14.9735H200.752L196.582 2L192.411 14.9735H178.616L189.845 22.7575L185.514 35.731L196.582 27.6226L207.65 35.731L203.319 22.7575L214.547 14.9735Z" stroke="black" stroke-width="3" fill="yellow" stroke-linejoin="round"/>
+<path class="fourth" d="M302.855 14.9735H289.061L284.89 2L280.72 14.9735H266.925L278.153 22.7575L273.822 35.731L284.89 27.6226L295.958 35.731L291.627 22.7575L302.855 14.9735Z" stroke="black" stroke-width="3" fill="yellow" stroke-linejoin="round"/>
+<path class="fifth" d="M391.164 14.9735H377.369L373.198 2L369.028 14.9735H355.233L366.461 22.7575L362.13 35.731L373.198 27.6226L384.266 35.731L379.935 22.7575L391.164 14.9735Z" stroke="black" stroke-width="3" fill="yellow" stroke-linejoin="round"/>
 </svg>

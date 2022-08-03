@@ -5,6 +5,8 @@
   <CallButton/>
   <AboutUs/>
   <TypesOfWork/>
+  <PriceList />
+  <ZonesDelivery/>
   <ReviewsClients/>
   <OurClients/>
   <ContactUs/>
@@ -22,7 +24,8 @@ import ReviewsClients from '../components/ReviewsClients.vue'
 import OurClients from '../components/OurClients.vue'
 import ContactUs from '../components/ContactUs.vue'
 import FooterApp from '../components/FooterApp.vue'
-
+import PriceList from '../components/PriceList.vue'
+import ZonesDelivery from '../components/ZonesDelivery.vue'
 export default {
   name: 'MainPage',
   components: {
@@ -34,7 +37,9 @@ export default {
     ReviewsClients,
     OurClients,
     ContactUs, 
-    FooterApp
+    FooterApp,
+    PriceList,
+    ZonesDelivery
   }
 }
 </script>
