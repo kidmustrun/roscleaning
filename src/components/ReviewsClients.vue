@@ -1,27 +1,85 @@
 <template>
   <div id="reviews" class="pt-5">
     <h2 class="text-center"><b>Отзывы</b></h2>
-    <div class="blocks">
-         <img class="stars-left" src="../assets/stars.svg" />
-      <div class="right-block mt-5">
-        <p>Заказали мойку панорамных окон общей площадью 100 метров. Ребята приехали в день обращения со своим оборудованием и химией. Всё быстро и чётко. Я довольна.</p>
-<p><i>Лариса, Санкт-Петербург</i></p>
+    <div
+      id="carouselExampleFade"
+      class="carousel slide carousel-dark"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="blocks">
+            <div class="block mt-3 p-3">
+              
+              <h4 class="text-center"><b>Генеральная уборка дома 200 м²</b></h4>
+               <img src="../assets/stars.svg" class="stars"/>
+              <p class="mt-3">
+                У нас дом 200 кв. м и убрать его своими силами не представляется
+                возможным. Потому решили заказать генеральную уборку + мойка
+                окон. Работы выполняла бригада из 4-х человек. Уборка была
+                выполнена хорошо. Полы оттерли, промыли все полки, во всех
+                шкафах. На кухне и в туалете ни следа ржавчины, кухонный
+                гарнитур блестит! Средства и пылесосы клинеры принесли свои.
+                Спасибо, будем заказывать еще!
+              </p>
+              <p><i>Ольга и Константин, г. Кировск</i></p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="blocks">
+            <div class="block mt-3 p-3">
+               <h4 class="text-center"><b>Химчистка дивана</b></h4>
+               <img src="../assets/stars.svg" class="stars"/>
+              <p class="mt-3">
+                Наш дачный диван уже давно нужно было либо выбросить, либо
+                профессионально прохимчистить. Решили дать ему второй шанс и
+                обратились в клининговую компанию. На диване было множество
+                старых пятен от напитков, просто грязь от времени. Клинер очень
+                качественно провёл чистку, вывел неприятные запахи. Всего,
+                химчистка заняла 4 часа. Диван стал как новый. Рекомендую!
+              </p>
+              <p><i>Мария, г. Всеволожск</i></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="blocks">
+            <div class="block mt-3 p-3">
+              <h4 class="text-center"><b>Уборка после ремонта</b></h4>
+               <img src="../assets/stars.svg" class="stars"/>
+              <p class="mt-3">
+                После ремонта, попробовав убраться самим, быстро поняли, что
+                своими силами никак не справимся. Обратились по рекомендации в
+                Рос-клининг. Очень понравился подход, все вежливые, аккуратные,
+                ребята знают как выводить строительные загрязнения, средства и
+                оборудование привезли всё своё. Все было выполнено аккуратно ,
+                добросовестно. Работой очень довольна
+              </p>
+              <p><i>Анастасия, г. Санкт-Петербург</i></p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="blocks">
-       <div class="left-block">
-        <p>Перед майскими праздниками надо было срочно привести дом в порядок к приезду гостей. По совету знакомых обратились в эту компанию. Надо было вымыть полы, 200 метров, и протереть пыль по дому. Очень приятный персонал, мы остались очень довольны. В подарок так же сделали химчистку ковра.</p>
-        <p><i>Ирина и Александр, Шлиссельбург</i></p>
-      </div>
-      <img class="stars-right" src="../assets/stars.svg" />
-    </div>
-    <div class="blocks">
-         <img class="stars-left" src="../assets/stars.svg" />
-      <div class="right-block">
-        <p>Нужна была регулярная поддерживающая уборка торгового помещения 45м.  По совету знакомых выбрали компанию РОС-КЛИНИНГ. Клинеры приезжают без опозданий. Работу выполняют хорошо. Очень вежливые и пунктуальные</p>
-        <p><i>Владимир, Санкт-Петербург</i></p>
-      </div>
-     
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Предыдущий</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Следующий</span>
+      </button>
     </div>
   </div>
 </template>
@@ -32,62 +90,32 @@ export default {
 };
 </script>
 <style scoped>
-.blocks{
-    display: flex;
-    justify-content: space-between;
+.blocks {
+  display: flex;
+  justify-content: space-between;
 }
-.stars-left{
-margin-left: 10%
+.stars{
+  width: 400px;
 }
-.stars-right{
-margin-right: 10%
-}
-.left-block {
+.block {
   background: #ffffff;
-  border: 1px solid #000000;
+  border: 0.1px solid #000000;
   box-sizing: border-box;
-  border-radius: 0px 30px 30px 0px;
-  width: 45vw;
-  padding: 20px 20px 20px 100px;
-  font-size:max(1em, min(1em, calc(100vw * 4 / 75)));
+  border-radius: 30px;
+  text-align: center;
+  margin: 0 auto;
+  width: 75%;
+  font-size: 1em;
   line-height: 24px;
-  border-left-style: none;
-  transition: 0.5s ease;
-}
-.right-block {
-  text-align: right;
-  background: #ffffff;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 30px 0px 0px 30px;
-  width: 45vw;
-  padding: 20px 100px 20px 20px;
-  font-size:max(1em, min(1em, calc(100vw * 4 / 75)));
-  line-height: 24px;
-  margin-left: auto;
-  border-right-style: none;
   transition: 0.5s ease;
 }
 
-
-@media screen and (max-width: 992px) {
-    .left-block{
-        width: 90vw;
-        padding: 20px;
-         margin-top: 5vh;
-
-    }
-     .right-block{
-        width: 90vw;
-        padding: 20px;
-        margin-top: 5vh;
-    }
-    .stars-left{
-        display: none;
-    }
-    .stars-right{
-        display: none;
-    }
+@media screen and (max-width: 767px) {
+  .block{
+    font-size: 0.8em;
+  }
+  .stars{
+    width: 100%;
+  }
 }
-
 </style>

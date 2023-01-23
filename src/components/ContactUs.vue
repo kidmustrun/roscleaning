@@ -4,14 +4,14 @@
     <img class="bubbles-right" src="../assets/bubbles.svg" />
     <div class="row w-100 mt-4">
       <div class="col-lg-5 contacts my-lg-auto">
-        <p>Телефон: <a class="link" href="tel:+79211891727" target="_blank" ><u>8 (921) 189 17-27</u></a></p>
-        <p>Email: <a class="link" href="mailto:contact@ros-cleaning.ru" target="_blank" ><u>contact@ros-cleaning.ru</u></a></p>
+        <p>Телефон: <a class="link" href="tel:+79213216653" target="_blank" ><u>8 (921) 321 66-53</u></a></p>
+        <p>Email: <a class="link" href="mailto:ros-cleaning@yandex.ru" target="_blank" ><u>ros-cleaning@yandex.ru</u></a></p>
         <p>Социальные сети:</p>
         <div class="d-flex">
           <a href="https://t.me/Roscleaning" class="me-3" target="_blank" >
             <img src="../assets/telegram.svg" />
           </a>
-          <a href="https://wa.me/+79211891727" target="_blank"  class="me-3">
+          <a href="https://wa.me/+79213216653" target="_blank"  class="me-3">
             <img src="../assets/whatsapp.svg" />
           </a>
           <a href="https://vk.com/roscleaning" target="_blank" >
@@ -21,7 +21,7 @@
       </div>
       <div class="col-lg-7 order-lg-first">
         <div class="form clearfix">
-          <h3 class="text-center">Свяжитесь с нами</h3>
+          <h3 class="text-center">Форма заявки</h3>
           <div class="row g-3 align-items-center mt-3">
             <div class="col-4">
               <label for="name" class="col-form-label required">Ваше имя</label>
@@ -33,7 +33,7 @@
                 class="form-control"
                 required
                 v-model="name"
-                placeholder="Иван"
+                placeholder="Светлана"
               />
             </div>
           </div>
@@ -51,7 +51,7 @@
                 required
                 v-model="phone"
                 pattern="7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                placeholder="Ваш телефон"
+                placeholder="+7(___)__-__"
               />
             </div>
           </div>
@@ -62,7 +62,7 @@
                 id="message"
                 rows="5"
                 v-model="message"
-                placeholder="Нужна уборка квартиры на следующее воскресенье"
+                placeholder="Нужна генеральная уборка квартиры 40 метров кв. + мойка окон"
               ></textarea>
             </div>
           </div>
@@ -71,7 +71,7 @@
           </div>
           <button
             type="button"
-            class="btn btn-light mt-3 buttonCall"
+            class="btn btn-primary mt-3 buttonCall"
             @click="sendMessage()"
             v-if="!alert"
           >
@@ -144,7 +144,6 @@ label.required:after {
 }
 .buttonCall {
   float: right;
-  border: 1px solid #849fff;
   border-radius: 5px;
   box-sizing: border-box;
 }

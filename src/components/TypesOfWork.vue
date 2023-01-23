@@ -4,15 +4,15 @@
     <div class="row mt-4">
         <div class="col col-left mt-md-0 mt-3">
             <div class="text-left text-top">
-                Уборка квартир, домов,<br> коммерческих помещений
+                Уборка квартиры, дома,<br>коттеджа, коммерческих помещений
             </div>
-           <img src="../assets/work1.jpg" /> 
+           <img src="../assets/work1.webp" alt=" Уборка квартиры, дома, коттеджа, коммерческих помещений"/> 
         </div>
         <div class="col col-right mt-md-0 mt-3">
             <div class="text-right text-top">
-               Удаление<br> Трудновыводимых пятен
+               Удаление<br>трудновыводимых пятен
             </div>
-           <img  src="../assets/work4.jpg" /> 
+           <img  src="../assets/work4.webp" alt="Удаление трудновыводимых пятен"/> 
         </div>
     </div>
     <div class="row">
@@ -20,13 +20,13 @@
             <div class="text-left text-bottom">
                 Мойка окон
             </div>
-           <img src="../assets/work3.jpg" /> 
+           <img src="../assets/work3.webp" alt="Мойка окон"/> 
         </div>
          <div class="col col-right mt-md-0 mt-3">
             <div class="text-right text-top">
-               Химчистка ковров и мягкой мебели
+               Химчистка дивана, ковра,<br>подушек, игрушек
             </div>
-           <img  src="../assets/work2.jpg" /> 
+           <img  src="../assets/work2.webp" alt="Химчистка дивана, ковра, подушек, игрушек"/> 
         </div>
 
     </div>
@@ -35,14 +35,14 @@
             <div class="text-left text-top">
                Вынос мусора
             </div>
-           <img  src="../assets/work6.jpg" /> 
+           <img  src="../assets/work6.webp" alt="Вынос мусора"/> 
         </div>
         <div class="col col-right mt-md-0 mt-3">
             <div class="text-right text-bottom">
                Дополнительные услуги
           
             </div>
-           <img src="../assets/work5.jpg" /> 
+           <img src="../assets/work5.webp" alt="Дополнительные услуги"/> 
         </div>
         
     </div>
@@ -85,6 +85,7 @@ img{
     background-color: rgba(0,0,0,0.5);
     color: #fff;
     padding: 10px 30px 10px 30px;
+    border-radius: 0 10px 10px 0;
     font-size:max(1.0em, min(1.2em, calc(100vw * 4 / 75)));
 }
 .text-right{
@@ -93,6 +94,7 @@ img{
     background-color: rgba(0,0,0,0.5);
     color: #fff;
     right: 0;
+     border-radius: 10px 0 0 10px;
     padding: 10px 30px 10px 30px;
     font-size:max(1.0em, min(1.2em, calc(100vw * 4 / 75)));
 }

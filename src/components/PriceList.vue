@@ -1,13 +1,13 @@
 <template>
   <div class="container pt-5" id="price">
-    <div class="container-fluid ">
+    <div class="container-fluid">
       <form id="form">
         <div class="heading">
           <h2 class="text-center"><b>Калькулятор стоимости уборки</b></h2>
         </div>
         <div class="calc-section">
           <label class="checkbox-wrapper title-bold section-title">
-            Тип уборки
+            Тип уборки:
           </label>
           <div class="rooms-wrapper row">
             <label class="rooms-label col col-3-sm text-center">
@@ -18,7 +18,9 @@
                 :value="1"
                 v-model.number="type"
               />
-              <span class="rooms-radio-fake mb-3">Поддерживающая <br />уборка</span>
+              <span class="rooms-radio-fake mb-3"
+                >Поддерживающая <br />уборка</span
+              >
             </label>
 
             <label class="rooms-label col col-3-sm text-center">
@@ -30,7 +32,9 @@
                 checked
                 v-model.number="type"
               />
-              <span class="rooms-radio-fake mb-3">Генеральная <br />уборка</span>
+              <span class="rooms-radio-fake mb-3"
+                >Генеральная <br />уборка</span
+              >
             </label>
 
             <label class="rooms-label col col-3-sm text-center">
@@ -41,8 +45,146 @@
                 :value="3"
                 v-model.number="type"
               />
-              <span class="rooms-radio-fake mb-3">Уборка <br />после ремонта</span>
+              <span class="rooms-radio-fake mb-3"
+                >Уборка <br />после ремонта</span
+              >
             </label>
+            <div class="px-md-5" v-if="this.type == 1">
+              <ul>
+                <li>Сухая и влажная уборка пола;</li>
+                <li>Протирка от пыли всех горизонтальных поверхностей;</li>
+                <li>Мойка зеркал;</li>
+                <li>Простая чистка и мойка кухни и сан. узлов.</li>
+              </ul>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Полный список услуг, входящих в поддерживающую уборку
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body text-start">
+                      Сухая и влажная уборка полов, протирка дверей, наличников,
+                      плинтусов, бытовой техники, радиаторов, мойка зеркал,
+                      протирка смесителей и сантехники, протирка плиты, и
+                      кухонной техники, вынос мусора и дезинфекция мусорной
+                      корзины.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-md-5" v-if="this.type == 2">
+              <ul>
+                <li>Сухая и влажная уборка полов;</li>
+                <li>
+                  Протирка стен, горизонтальных поверхностей, мебели и бытовой
+                  техники от пыли;
+                </li>
+                <li>Удаление въевшихся и трудновыводимых загрязнений;</li>
+                <li>Чистка от загрязнений кухонной техники снаружи.</li>
+              </ul>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Полный список услуг, входящих в генеральную уборку
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body text-start">
+                      Сухая и влажная уборка полов, влажная уборка подоконников,
+                      радиаторов, мытьё зеркал и стеклянных поверхностей,
+                      влажная уборка всех видов корпусной мебели, удаление пыли
+                      с бытовой техники, мытьё дверей, наличников, плинтусов,
+                      мойка смесителей и сантехники, мытьё душевой кабины и
+                      ванной, мытьё кафельной плитки в санузлах от потолка до
+                      пола, мытьё стеновой панели кухонного гарнитура, мытьё
+                      внешних фасадов, очистка загрязнений кухонной плиты,
+                      вытяжки, духовой и микроволновых печей, холодильника
+                      снаружи.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-md-5" v-if="this.type == 3">
+              <ul>
+                <li>
+                  Сбор и вынос строительного мусора , плёнки и картона до 10кг;
+                </li>
+                <li>
+                  Удаление строительной пыли с полов, стен, мебели и техники;
+                </li>
+                <li>
+                  Удаление следов затирки, цемента, лака, краски, клея,
+                  строительного скотча;
+                </li>
+                <li>Включает в себя все услуги генеральной уборки.</li>
+              </ul>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Полный список услуг, входящих в уборку после ремонта
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body text-start">
+                      Сбор и вынос строительного мусора, плёнки и картона до
+                      10кг, удаление строительной пыли с пола, стен, мебели и
+                      бытовой техники, удаление следов затирки, цемента, лака,
+                      краски, клея, строительного скотча, сухая уборка
+                      пылесосом, влажная уборка мебели и бытовой техники, мойка
+                      дверей, наличников, плинтусов, мойка зеркал и стеклянных
+                      поверхностей, мойка смесителей и сантехники, мытьё душевых
+                      кабин и ванн, мытьё кафельной плитки в сан. узлах от
+                      потолка до пола, очистка кухонных рабочих поверхностей,
+                      мытьё стеновой панели кухонного гарнитура, мытьё внешних
+                      фасадов, мойка вытяжки, мытьё кухонной плиты,
+                      холодильника, микроволновой и духовой печи снаружи.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="calc-section">
@@ -53,7 +195,6 @@
             <input
               type="number"
               min="0"
-              max="750"
               id="square-input"
               class="title__inline input-short"
               v-model.number="room_area"
@@ -65,51 +206,23 @@
             id="square-range"
             class="range-input"
             min="0"
-            max="750"
+            max="200"
             step="1"
             v-model.number="room_area"
           />
-        </div>
-        <div class="calc-section">
-          <label
-            class="checkbox-wrapper title-bold section-title .section-title--vertical-center"
-          >
-            <span class="title__inline">Степень загрязнения:</span>
-            <input
-              type="number"
-              min="1"
-              max="3"
-              id="square-input"
-              class="title__inline input-short"
-              v-model.number="degree"
-            />
-         
-          </label>
-          <input
-            type="range"
-            id="square-range"
-            class="range-input"
-            min="1"
-            max="3"
-            step="1"
-            v-model.number="degree"
-          />
           <div class="d-flex justify-content-between">
-<span>низкая</span>
-            <span>средняя</span>
-            <span>высокая</span>
+            <span><b>0</b></span>
+            <span><b>200+</b></span>
           </div>
-             
         </div>
         <div class="calc-section">
           <label
             class="checkbox-wrapper title-bold section-title .section-title--vertical-center"
           >
-            <span class="title__inline">Количество двустворчатых окон:</span>
+            <span class="title__inline">Количество окон:</span>
             <input
               type="number"
               min="0"
-              max="75"
               id="square-input"
               class="title__inline input-short"
               v-model.number="windows"
@@ -118,68 +231,126 @@
           <input
             type="range"
             id="square-range"
-            class="range-input"
+            class="range-input d-md-block d-none"
             min="0"
-            max="75"
+            max="20"
             step="1"
             v-model.number="windows"
           />
+          <div class="d-md-flex justify-content-between d-none">
+            <span><b>0</b></span>
+            <span><b>20+</b></span>
+          </div>
         </div>
         <div class="calc-section">
-          <label
-            class="checkbox-wrapper title-bold section-title .section-title--vertical-center"
-          >
-            <span class="title__inline">Химчистка ковров:</span>
-            <input
-              type="number"
-              min="0"
-              max="100"
-              id="square-input"
-              class="title__inline input-short"
-              v-model.number="carpets"
-            />
-            <span class="title__inline">м²</span>
+          <label class="checkbox-wrapper title-bold section-title">
+            Химчистка:
           </label>
-          <input
-            type="range"
-            id="square-range"
-            class="range-input"
-            min="0"
-            max="100"
-            step="1"
-            v-model.number="carpets"
-          />
+          <div class="row container">
+            <div class="col-md">
+              <label class="radio-wrapper">
+                <input
+                  type="checkbox"
+                  class="radio"
+                  name="divan4"
+                  value="1"
+                  v-model.number="checkedDryCleaning"
+                />
+                <div class="title-lite">
+                  Диван 4-х местный (угловой)
+                  <span class="note">4500 рублей</span>
+                </div>
+              </label>
+              <label class="radio-wrapper">
+                <input
+                  type="checkbox"
+                  class="radio"
+                  name="divan3"
+                  value="2"
+                  v-model.number="checkedDryCleaning"
+                />
+                <div class="title-lite">
+                  Диван 3-х местный
+                  <span class="note">3500 рублей</span>
+                </div>
+              </label>
+              <label class="radio-wrapper">
+                <input
+                  type="checkbox"
+                  class="radio"
+                  name="divan3"
+                  value="3"
+                  v-model.number="checkedDryCleaning"
+                />
+                <div class="title-lite">
+                  Диван 2-х местный
+                  <span class="note">2500 рублей</span>
+                </div>
+              </label>
+            </div>
+            <div class="col-md">
+              <label class="radio-wrapper">
+                <input
+                  type="checkbox"
+                  class="radio"
+                  name="armchair"
+                  value="4"
+                  v-model.number="checkedDryCleaning"
+                />
+                <div class="title-lite">
+                  Кресло
+                  <span class="note">1300 рублей</span>
+                </div>
+              </label>
+              <label class="radio-wrapper">
+                <input
+                  type="checkbox"
+                  class="radio"
+                  name="chair"
+                  value="5"
+                  v-model.number="checkedDryCleaning"
+                />
+                <div class="title-lite">
+                  Стул
+                  <span class="note">500 рублей</span>
+                </div>
+              </label>
+              <label class="radio-wrapper">
+                <input
+                  type="checkbox"
+                  class="radio"
+                  name="mattress"
+                  value="6"
+                  v-model.number="checkedDryCleaning"
+                />
+                <div class="title-lite">
+                  Матрас
+                  <span class="note">1800 рублей</span>
+                </div>
+              </label>
+            </div>
+            <div class="col-md mt-md-0 mt-3">
+              <label
+                class="checkbox-wrapper title-lite section-title .section-title--vertical-center"
+              >
+                <div class="title__inline">Ковёр:</div>
+                <input
+                  type="number"
+                  min="0"
+                  id="square-input"
+                  class="title__inline input-short"
+                  v-model.number="carpets"
+                />
+                <div class="title__inline">м²</div>
+              </label>
+            </div>
+          </div>
         </div>
         <div class="calc-section">
           <label class="checkbox-wrapper title-bold section-title">
             Дополнительные опции
           </label>
-          <label class="radio-wrapper">
-            <input
-              type="checkbox"
-              class="radio"
-              name="chandelier"
-              value="1"
-              v-model.number="checkedServices"
-            />
-            <div class="title-lite">
-              Мойка люстры
-              <span class="note">250 рублей</span>
-            </div>
-          </label>
-          <label class="radio-wrapper">
-            <input
-              type="checkbox"
-              class="radio"
-              name="range_hood"
-              value="2"
-              v-model.number="checkedServices"
-            />
-            <div class="title-lite">
-              Мойка вытяжки
-              <span class="note">450 рублей</span>
-            </div>
-          </label>
+
           <label class="radio-wrapper">
             <input
               type="checkbox"
@@ -190,7 +361,7 @@
             />
             <div class="title-lite">
               Мойка холодильника изнутри
-              <span class="note">350 рублей</span>
+              <span class="note">от 350 рублей</span>
             </div>
           </label>
           <label class="radio-wrapper">
@@ -202,8 +373,34 @@
               v-model.number="checkedServices"
             />
             <div class="title-lite">
-              Мойка духовой/СВЧ печи изнутри
-              <span class="note">350 рублей</span>
+              Мойка микроволновой печи изнутри
+              <span class="note">от 350 рублей</span>
+            </div>
+          </label>
+          <label class="radio-wrapper">
+            <input
+              type="checkbox"
+              class="radio"
+              name="range_hood"
+              value="2"
+              v-model.number="checkedServices"
+            />
+            <div class="title-lite">
+              Мойка духовой печи изнутри
+              <span class="note">от 450 рублей</span>
+            </div>
+          </label>
+          <label class="radio-wrapper">
+            <input
+              type="checkbox"
+              class="radio"
+              name="chandelier"
+              value="1"
+              v-model.number="checkedServices"
+            />
+            <div class="title-lite">
+              Мойка жалюзи
+              <span class="note">от 450 рублей</span>
             </div>
           </label>
           <label class="radio-wrapper">
@@ -216,48 +413,131 @@
             />
             <div class="title-lite">
               Мойка посуды
-              <span class="note">350 рублей</span>
+              <span class="note">от 350 рублей</span>
             </div>
           </label>
         </div>
-        <div class="calc-price text-end">
-          <h4 class="text-end"><b>Стоимость уборки:</b></h4>
+        <div class="calc-price text-end p-md-5 p-3">
+          <h4 class="text-end"><b>Примерная стоимость уборки:</b></h4>
           <div class="calc-price-value">
-            <span v-if="total<1000" id="total-price">{{ total }}</span>
-             <span v-else id="total-price">{{ (total - total % 1000) / 1000 }} {{ (total%1000).toString().padStart(3,0) }}</span>
+            <span v-if="total < 1000" id="total-price">{{ total }}</span>
+            <span v-else id="total-price"
+              >{{ (total - (total % 1000)) / 1000 }}
+              {{ (total % 1000).toString().padStart(3, 0) }}</span
+            >
             рублей
           </div>
+            <div class="card card-body container-fluid mt-3">
+              <div class="form clearfix">
+                <div class="row g-3 align-items-center mt-3 text-center">
+                  <div class="col-4">
+                    <label for="name" class="col-form-label required"
+                      >Ваше имя</label
+                    >
+                  </div>
+                  <div class="col-8">
+                    <input
+                      type="text"
+                      id="name"
+                      class="form-control"
+                      required
+                      v-model="name"
+                      placeholder="Иван"
+                    />
+                  </div>
+                </div>
+                <div class="row g-3 align-items-center mt-3 text-center">
+                  <div class="col-4">
+                    <label for="phone" class="col-form-label required"
+                      >Ваш телефон</label
+                    >
+                  </div>
+                  <div class="col-8">
+                    <input
+                      type="tel"
+                      id="phone"
+                      class="form-control"
+                      required
+                      v-model="phone"
+                      pattern="7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                      placeholder="Ваш телефон"
+                    />
+                  </div>
+                </div>
+                <ul class="text-start ms-md-5 mt-5">
+                  <li v-if="type == 1 && room_area">Поддерживающая уборка</li>
+                  <li v-else-if="type == 2 && room_area">Генеральная уборка</li>
+                  <li v-else-if="type == 3 && room_area">
+                    Уборка после ремонта
+                  </li>
+                  <li v-if="room_area">
+                    Площадь помещения: {{ room_area }} м²
+                  </li>
+                  <li v-if="windows">Количество окон: {{ windows }}</li>
+                  <li
+                    v-if="checkedDryCleaning.find((service) => service == '1')"
+                  >
+                    Химчистка: Диван 4-х местный (угловой)
+                  </li>
+                  <li
+                    v-if="checkedDryCleaning.find((service) => service == '2')"
+                  >
+                    Химчистка: Диван 3-х местный
+                  </li>
+                  <li
+                    v-if="checkedDryCleaning.find((service) => service == '3')"
+                  >
+                    Химчистка: Диван 2-х местный
+                  </li>
+                  <li
+                    v-if="checkedDryCleaning.find((service) => service == '4')"
+                  >
+                    Химчистка: Кресло
+                  </li>
+                  <li
+                    v-if="checkedDryCleaning.find((service) => service == '5')"
+                  >
+                    Химчистка: Стул
+                  </li>
+                  <li
+                    v-if="checkedDryCleaning.find((service) => service == '6')"
+                  >
+                    Химчистка: Матрас
+                  </li>
+                  <li v-if="carpets">Химчистка: Ковёр {{ carpets }} м²</li>
+                  <li v-if="checkedServices.find((service) => service == '3')">
+                    Мойка холодильника изнутри
+                  </li>
+                  <li v-if="checkedServices.find((service) => service == '4')">
+                    Мойка микроволновой печи изнутри
+                  </li>
+                  <li v-if="checkedServices.find((service) => service == '2')">
+                    Мойка духовой печи изнутри
+                  </li>
+                  <li v-if="checkedServices.find((service) => service == '1')">
+                    Мойка жалюзи
+                  </li>
+                  <li v-if="checkedServices.find((service) => service == '5')">
+                    Мойка посуды
+                  </li>
+                </ul>
+                <div class="alert alert-warning mt-3" v-if="warning">
+                  Вы не заполнили обязательные поля!
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-primary mt-3 buttonCall"
+                  @click="sendMessage"
+                >
+                  Отправить заявку
+                </button>
+                <div class="alert alert-info mt-3" v-if="alert">
+                  Спасибо за заявку, мы скоро Вам перезвоним!
+                </div>
+              </div>
+            </div>
         </div>
       </form>
-    </div>
-        <h2 class="text-center mt-5"><b>Наши цены</b></h2>
-    <div class="container pricelist p-4 mt-4">
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item d-flex justify-content-between">
-          <span>Генеральная уборка</span> <span>от 150 руб/м<sup>2</sup></span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-          <span>Уборка после ремонта</span>
-          <span>от 150 руб/м<sup>2</sup></span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-          <span>Поддерживающая уборка</span>
-          <span>от 50 руб/м<sup>2</sup></span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-          <span>Мойка окон</span> <span>от 600 руб/м<sup>2</sup></span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-          <span>Химчистка ковров/мягкой мебели</span>
-          <span>от 150 руб/м<sup>2</sup></span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-          <span>Дополнительные услуги</span> <span>от 350 руб</span>
-        </li>
-      </ul>
-      <p class="mt-5">
-        Точная стоимость зависит от площади помещения и степени загрязнения.
-      </p>
     </div>
   </div>
 </template>
@@ -268,47 +548,98 @@ export default {
     return {
       type: 2,
       room_area: 0,
-      degree: 1,
       windows: 0,
       carpets: 0,
       checkedServices: [],
+      checkedDryCleaning: [],
+      name: "",
+      phone: "",
+      warning: false,
+      alert: false
     };
+  },
+  methods: {
+    sendMessage() {
+      const axios = require("axios").default;
+      if (this.name && this.phone) {
+        axios.post(
+          `https://api.telegram.org/bot5156932135:AAHQncdNI5AWEzJO0ikk4uHpz4Wu-F7vIvQ/sendMessage?chat_id=-786629935&parse_mode=html&text=Имя: ${this.name}, телефон: ${this.phone}, сообщение: ${this.message}`
+        );
+        this.warning = false;
+        this.alert = true;
+      } else this.warning = true;
+    },
   },
   computed: {
     total: function () {
       let coef = 0;
-      switch (this.degree) {
+      switch (this.type) {
         case 1:
-          if (this.type == 2 || this.type == 3) {
-            coef = 150;
-          } else coef = 50;
+          coef = 60;
           break;
         case 2:
-          if (this.type == 2 || this.type == 3) {
-            coef = 180;
-          } else coef = 70;
+          coef = 150;
           break;
         case 3:
-          if (this.type == 2 || this.type == 3) {
-            coef = 220;
-          } else coef = 90;
+         coef = 170;
           break;
         default:
-          if (this.type == 2 || this.type == 3) {
-            coef = 150;
-          } else coef = 50;
+          coef = 60;
       }
       let summ = 0;
       for (let service of this.checkedServices) {
-        if (service == 1) summ += 250;
+        if (service == 1) summ += 450;
         else if (service == 2) summ += 450;
         else if (service == 3) summ += 350;
         else if (service == 4) summ += 350;
         else if (service == 5) summ += 350;
       }
+      for (let service of this.checkedDryCleaning) {
+        if (service == 1) summ += 4500;
+        else if (service == 2) summ += 3500;
+        else if (service == 3) summ += 2500;
+        else if (service == 4) summ += 1300;
+        else if (service == 5) summ += 500;
+        else if (service == 6) summ += 1800;
+      }
       return (
         coef * this.room_area + this.windows * 600 + this.carpets * 150 + summ
       );
+    },
+    message: function () {
+      let stroke = "";
+      if (this.type == 1 && this.room_area) stroke += "Поддерживающая уборка, ";
+      else if (this.type == 2 && this.room_area)
+        stroke += "Генеральная уборка, ";
+      else if (this.type == 3 && this.room_area)
+        stroke += "Уборка после ремонта, ";
+      if (this.room_area) stroke += `площадь помещения: ${this.room_area} м², `;
+      if (this.windows) stroke += `количество окон: ${this.windows}, `;
+      if (this.checkedDryCleaning.find((service) => service == "1"))
+        stroke += "диван 4-х местный (угловой), ";
+      if (this.checkedDryCleaning.find((service) => service == "2"))
+        stroke += "диван 3-х местный, ";
+      if (this.checkedDryCleaning.find((service) => service == "3"))
+        stroke += "диван 2-х местный, ";
+      if (this.checkedDryCleaning.find((service) => service == "4"))
+        stroke += "кресло, ";
+      if (this.checkedDryCleaning.find((service) => service == "5"))
+        stroke += "стул, ";
+      if (this.checkedDryCleaning.find((service) => service == "6"))
+        stroke += "матрас, ";
+      if (this.carpets) stroke += `ковёр ${this.carpets} м², `;
+      if (this.checkedServices.find((service) => service == "3"))
+        stroke += "мойка холодильника изнутри, ";
+      if (this.checkedServices.find((service) => service == "4"))
+        stroke += "мойка микроволновой печи изнутри, ";
+      if (this.checkedServices.find((service) => service == "2"))
+        stroke += "мойка духовой печи изнутри, ";
+      if (this.checkedServices.find((service) => service == "1"))
+        stroke += "мойка жалюзи, ";
+      if (this.checkedServices.find((service) => service == "5"))
+        stroke += "мойка посуды, ";
+      if (this.total) stroke += `примерная стоимость ${this.total} рублей`
+      return stroke;
     },
   },
 };
@@ -489,6 +820,7 @@ h6 {
 .calc-section {
   padding: 40px 20px;
   background-color: #f4f8fa;
+  border-radius: 10px;
 }
 
 .calc-section:nth-child(odd) {
@@ -563,7 +895,7 @@ h6 {
   font-weight: 700;
   color: #039be5;
   text-align: center;
- vertical-align: middle;
+  vertical-align: middle;
 }
 
 .input-wrapper .input-short:first-child {
@@ -616,11 +948,10 @@ h6 {
 
 /* ------------ PRICE ------------ */
 .calc-price {
-  padding: 30px 50px;
   /* border: 10px solid #7ac5ea; */
   background-color: rgb(218, 243, 255);
   background-color: white;
-  box-shadow: -10px 0px 25px rgba(143, 179, 195, 0.685);
+  box-shadow: 0px 0px 25px rgba(143, 179, 195, 0.685);
 }
 
 .calc-price-title {
